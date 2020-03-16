@@ -1,0 +1,58 @@
+Linux:-
+Linux distributions are mainly divided into two packaging formats: rpm and deb. Distributions like Red Hat Enterprise Linux, SUSE Enterprise Linux, openSUSE, Fedora and CentOS are based on rpm, while the Debian family, including Ubuntu, Linux Mint, elementary OS are based on deb.
+
+Git:-
+Git Merge Conflicts: https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts 
+Git Stash: https://www.atlassian.com/git/tutorials/saving-changes/git-stash
+
+OOPS:-
+Class example: Human Class having attributes(name,age,height,weight,...) and methods(walk,sleep,eat...) every human has. There can be billions of instances for this class. A class is just a template for creating objects with similar attributes and behavior.
+
+Abstraction: https://www.guru99.com/java-data-abstraction.html
+
+JAVA:-
+1. The compiler never assigns a default value to an uninitialized local variable. If you cannot initialize your local variable where it is declared, make sure to assign it a value before you attempt to use it. Accessing an uninitialized local variable will result in a compile-time error.
+
+2. == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
+
+3. Java supports a special block, called static block (also called static clause) which can be used for static initializations of a class. This code inside static block is executed only once, before the constructor is called.
+
+4.Static variables can also be accessed through reference variables.
+
+5.An assertion allows testing the correctness of any assumptions that have been made in the program. Assertion is achieved using the assert statement in Java. While executing assertion, it is believed to be true. If it fails, JVM throws an error named AssertionError. It is mainly used for testing purposes during development.
+
+6. In Java, non-primitive or reference data types, unlike primitive data types, which include byte, int, long, short, float, double, and char, do not store values, but address or references to information.
+
+7. If a class contains the toString() method, then we can just print the object without even calling the method.
+
+8. Example for when a string object is created when initializing a String object.	
+	String s=new String("abc");//This creates a new object
+  	String s1="abc";//Creates a new object
+	String s1=s2;//Does not create an object but points to the same memory location
+	String s3="abc";//Does not create object because the string exists in the memory and s3 also points to same memory location as s1 does.
+
+9. == compares memory locations of the String objects, whereas .equals() compares the values present in memory locations of both the objects.
+
+10. A reference variable can refer to an object if the object is of the same type as a variable or if it is a subtype.
+    Upcasting happens implicitly.All Java objects are polymorphic and can be treated as objects of supertype due to upcasting.
+
+11.Most important advantage of Generics in Java is type-safety. Collections prior to JDK1.5 are not type-safe because they accept Object type argument which allows them to catch all type of objects instead of only required the type of object.
+
+12.  https://www.baeldung.com/java-type-casting
+
+13. Hide the logic of object creation from the user - Factory design pattern
+
+SOLID Principles:-
+S  Single responsibility principle: This principle states that “a class should have only one reason to change” which means every class should have a single responsibility or single job or single purpose.
+
+O  Open/Closed Principle:  This principle states that “software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification” which means you should be able to extend a class behavior, without modifying it.
+
+L  Liskov's Substitution Principle: “Derived or child classes must be substitutable for their base or parent classes“. This principle ensures that any class that is the child of a parent class should be usable in place of its parent without any unexpected behavior.
+It is a way of ensuring that inheritance is used correctly.
+
+I  Interface Segregation Principle: “do not force any client to implement an interface which is irrelevant to them“. Here your main goal is to focus on avoiding fat interface and give preference to many small client-specific interfaces. You should prefer many client interfaces rather than one general interface and each interface should have a specific responsibility.
+High Cohesion, Low coupling and highly resistant to changes.
+
+D  Dependency Inversion Principle: The primary purpose of Dependency Inversion is to remove dependencies from our code. High level modules should not depend on Low level modules but both should depend on Abstractions. The interaction between high level and low level modules should be brought up as an Abstraction.
+If DIP is not followed(Tightly coupled classes), then the higher level class will be dependent on lower level class, bringing in tight coupling. So if any changes are done in the lower level class(extended by another class, changed the functionality...), then the way in which higher level class accesses lower level class will also be changed. Dependency Inversion makes your code more reusable.
+Both high and low-level modules should depend on mutual abstractions rather than directly on one another. Use of the DIP improves program flexibility and maintainability because it sets up dependencies in a way that decreases the effect that changes in one place have on another.  

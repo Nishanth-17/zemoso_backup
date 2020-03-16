@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85b7b6ef-5e35-4cbe-82e8-59b794048ce7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Z0w3IRM5uDfvUg1RHCIm2lBgSw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/jdk1.8.0_60/bin" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Assignments_11" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Exceptions" />
+      <module name="Assignments_11" />
+      <option name="PROGRAM_PARAMETERS" value="$USER_HOME$/uinfo" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85b7b6ef-5e35-4cbe-82e8-59b794048ce7" name="Default Changelist" comment="" />
+      <created>1583989118169</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583989118169</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="373" y="54" width="676" height="694" key="#Assignments_11" timestamp="1584336943954">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="373" y="54" width="676" height="694" key="#Assignments_11/67.27.1299.741@67.27.1299.741" timestamp="1584336943954" />
+    <state x="311" y="59" width="800" height="684" key="#Project_Structure" timestamp="1583989141807">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="59" width="800" height="684" key="#Project_Structure/67.27.1299.741@67.27.1299.741" timestamp="1583989141807" />
+    <state x="174" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584354380129">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="174" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1584354380129" />
+    <state x="524" y="109" width="374" height="584" key="#com.intellij.ide.util.MemberChooser" timestamp="1584335451312">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="524" y="109" width="374" height="584" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1584335451312" />
+    <state x="544" y="60" width="324" height="681" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1583989683808">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="544" y="60" width="324" height="681" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/67.27.1299.741@67.27.1299.741" timestamp="1583989683808" />
+    <state x="466" y="281" width="490" height="240" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584009467101">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="466" y="281" width="490" height="240" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1299.741@67.27.1299.741" timestamp="1584009467101" />
+    <state x="494" y="155" width="735" height="491" key="FileChooserDialogImpl" timestamp="1583989714096">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="494" y="155" width="735" height="491" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1583989714096" />
+    <state width="1253" height="215" key="GridCell.Tab.0.bottom" timestamp="1584357521317">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="215" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1584357521317" />
+    <state width="1253" height="215" key="GridCell.Tab.0.center" timestamp="1584357521317">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="215" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1584357521317" />
+    <state width="1253" height="215" key="GridCell.Tab.0.left" timestamp="1584357521317">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="215" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1584357521317" />
+    <state width="1253" height="215" key="GridCell.Tab.0.right" timestamp="1584357521317">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="215" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1584357521317" />
+    <state width="1253" height="215" key="GridCell.Tab.1.bottom" timestamp="1584357521318">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="215" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1584357521318" />
+    <state width="1253" height="215" key="GridCell.Tab.1.center" timestamp="1584357521318">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="215" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1584357521318" />
+    <state width="1253" height="215" key="GridCell.Tab.1.left" timestamp="1584357521318">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="215" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1584357521318" />
+    <state width="1253" height="215" key="GridCell.Tab.1.right" timestamp="1584357521318">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="215" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1584357521318" />
+    <state x="199" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1583992550553">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="199" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1583992550553" />
+    <state x="167" y="127" width="1099" height="541" key="dock-window-1" timestamp="1584196244064">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="167" y="127" width="1099" height="541" key="dock-window-1/67.27.1299.741@67.27.1299.741" timestamp="1584196244064" />
+    <state x="0" y="27" width="710" height="741" key="find.popup" timestamp="1584036619507">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="0" y="27" width="710" height="741" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1584036619507" />
+    <state x="379" y="89" width="670" height="58" key="search.everywhere.popup" timestamp="1584338802327">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="670" height="58" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1584338802327" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Assignments_11$Assignments_11.ic" NAME="Assignments_11 Coverage Results" MODIFIED="1583992619024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
