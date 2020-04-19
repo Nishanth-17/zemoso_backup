@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:48:29 +0530] "GET /spring-security-demo-5/ HTTP/1.1" 302 - http-bio-8082-exec-1 149
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:48:30 +0530] "GET /spring-security-demo-5/showCustomFormLogin HTTP/1.1" 200 2238 http-bio-8082-exec-3 1225
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:48:39 +0530] "POST /spring-security-demo-5/authenticateTheUser HTTP/1.1" 302 - http-bio-8082-exec-4 114
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:48:39 +0530] "GET /spring-security-demo-5/ HTTP/1.1" 200 52 http-bio-8082-exec-5 54
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:48:39 +0530] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8082-exec-6 0
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:48:47 +0530] "GET /spring-security-demo-5/home/ HTTP/1.1" 200 349 http-bio-8082-exec-7 126
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:48:48 +0530] "POST /spring-security-demo-5/logout HTTP/1.1" 302 - http-bio-8082-exec-9 8
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:48:48 +0530] "GET /spring-security-demo-5/showCustomFormLogin?logout HTTP/1.1" 200 2392 http-bio-8082-exec-10 17
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:49:42 +0530] "POST /spring-security-demo-5/authenticateTheUser HTTP/1.1" 302 - http-bio-8082-exec-10 109
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:49:42 +0530] "GET /spring-security-demo-5/ HTTP/1.1" 200 52 http-bio-8082-exec-4 13
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:50:05 +0530] "GET /spring-security-demo-5/ HTTP/1.1" 200 118 http-bio-8082-exec-4 58
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:50:07 +0530] "GET /home HTTP/1.1" 404 - http-bio-8082-exec-4 0
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:50:29 +0530] "GET /home HTTP/1.1" 404 - http-bio-8082-exec-4 0
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:50:30 +0530] "GET /spring-security-demo-5/ HTTP/1.1" 200 141 http-bio-8082-exec-4 69
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:50:32 +0530] "GET /spring-security-demo-5/home HTTP/1.1" 200 350 http-bio-8082-exec-8 87
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:50:34 +0530] "POST /spring-security-demo-5/logout HTTP/1.1" 302 - http-bio-8082-exec-10 8
+0:0:0:0:0:0:0:1 - - [11/Apr/2020:23:50:34 +0530] "GET /spring-security-demo-5/showCustomFormLogin?logout HTTP/1.1" 200 2392 http-bio-8082-exec-2 13

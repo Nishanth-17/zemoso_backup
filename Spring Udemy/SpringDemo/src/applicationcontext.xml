@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <!-- Spring IOC -->
+    <bean id="mySport" class="Cricket"/>
+
+    <bean id="myCStadium" class="CricketStadium"/>
+    <bean id="myFStadium" class="FootballStadium"/>
+    <!--Constructor Injection-->
+    <bean id="mySportCI" class="Cricket">
+        <constructor-arg ref="myCStadium"/>
+    </bean>
+    <!--Setter Injection-->
+    <bean id="mySportSI" class="Football">
+        <property name="stadium" ref="myFStadium"/>
+    </bean>
+    <!-- Literal Injection-->
+    <bean id="mySportLiteralInjection" class="Cricket">
+        <property name="batsman" value="Ricky Ponting"/>
+    </bean>
+</beans>
