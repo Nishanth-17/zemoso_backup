@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Login page</title>
+  </head>
+  <body>
+  <hr>
+  <h1><p align="center"> SHOPPING CART </p></h1>
+  <hr>
+  <br>
+    <h2>SIGN IN</h2>
+    <p th:if="${loginError}" class="error">Wrong user or password</p>
+    <form th:action="@{/login}" method="post">
+      <label for="username">Username</label>:
+      <input type="text" id="username" name="username" autofocus="autofocus" /> <br /><br>
+      <label for="password">Password</label>:
+      <input type="password" id="password" name="password" /> <br /><br>
+      <input type="submit" value="Log in" />
+      <h4 class="text-center"><a th:href="@{/registration}">Don't have an Account?Sign Up</a></h4>
+    </form>
+  </body>
+</html>

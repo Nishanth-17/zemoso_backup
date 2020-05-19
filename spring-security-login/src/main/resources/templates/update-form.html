@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Update Form</title>
+</head>
+<body onload="passAlert()">
+<script th:inline="javascript">
+
+    function passAlert(){
+ /*<![CDATA[*/
+        alert("Updating your Password is mandatory!! You can re-use your old password or update a new password");
+        /*]]>*/
+        }
+    function showAlert(){
+    /*<![CDATA[*/
+        alert("Please login with your updated Username and Password!!");
+/*]]>*/
+
+    }
+</script>
+<div class="container">
+
+    <hr>
+    <h3>Update Your Info</h3>
+    <hr>
+
+    <p class="h4 mb-4">Enter Details</p>
+
+    <form name="myform" action="#" th:action="@{/update}"
+          th:object="${user}" method="POST">
+
+        <input type="text" th:field="*{username}"
+               class="form-control mb-4 col-4" placeholder="Name" >
+        <p style="color:red" th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Name Error</p>
+
+        <input type="text" th:field="*{email}"
+               class="form-control mb-4 col-4" placeholder="Email" readonly>
+        <p style="color:red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</p>
+
+        <input type="text" th:field="*{mobile}"
+               class="form-control mb-4 col-4" placeholder="Mobile Number">
+        <p style="color:red" th:if="${#fields.hasErrors('mobile')}" th:errors="*{mobile}">Mobile Error</p>
+
+        <input type="password" th:field="*{password}"
+               class="form-control mb-4 col-4" placeholder="Password">
+        <p style="color:red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</p>
+
+        <input type="password" th:field="*{passwordConfirm}"
+               class="form-control mb-4 col-4" placeholder="Confirm Your Password">
+        <p style="color:red" th:if="${#fields.hasErrors('passwordConfirm')}" th:errors="*{passwordConfirm}">Password Confirm Error</p>
+
+        <button type="submit" class="btn btn-success col-2" onclick="showAlert()">Save</button>
+
+    </form>
+
+    <hr>
+    <a th:href="@{/showInfo}" class="btn btn-info col-2">Go Back</a>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"/>
+     </body>
+</html>
