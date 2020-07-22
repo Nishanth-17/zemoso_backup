@@ -1,0 +1,13 @@
+dropdown should be made lighter with text highlighted
+error handling for same email	
+Sign IN as an admin for sigin for specific users
+display item list for a specifc user with name(Make it aware 
+Go through jparepo and its base classes   crudrep
+
+
+
+1. Drop Down (Auto fill of text) to be customized. ---> Done. (Changed the theme of browser)
+2. Exception Handling for Email ID and No Value Present Error. ---> Done. (Included Javascript to alert user whenever constraint is violated)
+3. Make the user aware of whose cart is being displayed. ---> Done. (Included Name of the User whose cart is being displayed)
+4. Include a Sign In Option for Admin or every user.
+5. Go through JPA Repository and it's Base Classes. -----> Done (Used CrudRepository as it doesnot extends PaginationAndSorting, while JPARepository does it along with CRUD functions)

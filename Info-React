@@ -1,0 +1,169 @@
+1. Each React element is a JavaScript object that you can store in a variable or pass around in your program.
+
+2.  To “remember” things, components use state. React components can have state by setting this.state in their constructors. this.state should be considered as private to a React component that it’s defined in.
+
+3.  When a component's state data changes, the render() will be reinvoked automatically.
+
+4. We can manage states in function components with the help of react hooks.
+
+5. All React hooks start with 'use'.
+
+6. Stateful Components-  Component which manages state. Also called as Container, Smart components.
+   Stateless Components- Component which only has presentational logic, but no state. Also called presentational, dumb components. 
+
+7.  	How jsx(HTML Content) is displayed without render method?Is it possible?
+    	What are components according to atomic design(atoms or molecules or organisms)? What is recommended way of building components?
+	What is const exactly?It's values can be reassigned without any error!!!
+
+8. bind() is used to pass an argument to a function referred by this. Basically an object to which the this keyword can refer inside the new 	function.
+
+9. Inorder to use a component, we need to export it.
+
+10. Javascript expressions can be injected into JSX by introducing curly braces.
+
+11. JSX is used to write HTML in React. It can be written within () braces, if it contains multiple lines.
+
+12. map() function maps every element from the array to the specified operation.
+
+13. React expects a unique field when we are operating on lists. So it is recommended to use key field for every list we use.
+
+14. Radium is a package which is used for providing psuedo selectors such as :hover and extra inline styles features.
+
+15. Styled Components is also a package which is used for styling.
+
+16. this.props should be used whenever we want to access props in a class component.
+
+17. https://reactjs.org/docs/state-and-lifecycle.html
+
+18. Class components are used for managing state and functional components are used for presentational purpose. Presentational components are 	  those functional components which do not manage any state and only have presentation logic. 
+
+19. A stateful component does not always mean class component. A functional component can also be a stateful component with the help of React 	  Hooks.
+
+20. The biggest advantage of PropTypes is it easy to catch bugs caused by passing data in the wrong data type (like a string in a Boolean    	 space). 
+
+21. componentDidMount() is called only once throughtout the execution. It is called when the component and its children components have been 	 rendered to the DOM. Lifecycle hooks have to be used when there are any side-effects. 
+    Ex: Side-Effect - Fetching new Data.
+
+22. useEffect() react hook is a mimic of componentDidMount() and componentDidUpdate() lifecycle hooks in a functional components.
+
+23. useEffect() takes in a function as a parameter which is executed every time the component renders.
+
+24. Inorder to conditionally render useEffect(), pass the 'stateName' array as an argument. Ex: Pass as [count]. When count changes, function
+    will be executed. Inorder to execute the function only once, pass [] empty array as parameter.
+
+25. React Memo has the same functionality of a pure component, but used in functional components.
+
+26. Fragments let you group a list of children without adding extra nodes to the DOM.
+
+27. If you want to pass whole props as parameter, refer to orielly chapter 7 lesson: passing unkown props
+
+28. Flex box places the items next to each other(columnly) by default. 
+
+29. Building your own Hooks lets you extract component logic into reusable functions.
+
+30. setCount(count => count+1) This is preferred over setCount(count+1); bcoz state Update is asynchronous in react.
+    This ensures that we pass in a prev Value and update it.
+
+31. The Promise object represents the eventual completion (or failure) of an asynchronous operation(fetching data), and its resulting value.
+
+32. Snapshot testing is a way to assert the result of a given test by generating a Json representation of its output.
+
+33. justifyContent: Aligns according to  X-Axis
+    alignItems: Aligns according to Y-Axis
+
+
+34. 		REDUX EXAMPLE WITH UNDERSTANDING OF REDUX BASICS
+
+ import { createStore } from 'redux'
+ * This is a reducer, a pure function with (state, action) => state signature.
+ * It describes how an action transforms the state into the next state.
+ * The shape of the state is up to you: it can be a primitive, an array, an object,
+ * or even an Immutable.js data structure. The only important part is that you should
+ * not mutate the state object, but return a new object if the state changes.
+
+function counter(state = 0, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1
+    case 'DECREMENT':
+      return state - 1
+    default:
+      return state
+  }
+}
+
+// Create a Redux store holding the state of your app.
+// Its API is { subscribe, dispatch, getState }.
+let store = createStore(counter)
+
+// You can use subscribe() to update the UI in response to state changes. It will be executed for every action dispatch.
+
+store.subscribe(() => console.log(store.getState()))
+
+// The only way to mutate the internal state is to dispatch an action.
+// The actions can be serialized, logged or stored and later replayed.
+store.dispatch({ type: 'INCREMENT' })
+// 1
+store.dispatch({ type: 'INCREMENT' })
+// 2
+store.dispatch({ type: 'DECREMENT' })
+// 1
+
+
+35. A Storybook is a collection of stories. Each story represents a single visual state of a component.
+    Technically, a story is a function that returns something that can be rendered to screen.
+
+36. Storybook is a development environment for UI components. It allows you to browse a component library, view the different states of each
+    component, and interactively develop and test components.
+
+
+
+DocsPage is a simple template to turn your Storybook into great looking docs. Each component page consists of a description, a primary story (with copyable source), a props table, and a collection of stories
+
+
+
+<div>
+            <img src={props.image} onClick={play} alt="" style={{height:'170px',width:'298px'}}/>
+        </div>
+
+
+const play =() => {
+        console.log(1);
+        return(
+            <ReactPlayer  
+                className="video" 
+                url={props.video}
+                width="298px" 
+                height="170px" 
+                controls={true} 
+                light={props.image}
+                playing
+            />
+        )
+
+
+TypeError: jquery__WEBPACK_IMPORTED_MODULE_3___default(...)(...).magnificPopup is not a function, when used  
+$(document).ready(function (){
+    $('#videolink').magnificPopup({
+        type:'iframe',
+        midClick: true
+    })
+})
+    }
+
+
+
+1. Using docs addon, DocsPage is auto-generated for every component.
+2. Each component's DocsPage when auto-generated, consists of a description, primary story(with copyable source), a props table, and a 	
+   collection of stories. 
+3. Everything which appears on the DocsPage are called as Doc Blocks.
+4. MDX simplifies writing Docs, and is used to customize the DocsPage by adding required Doc Blocks.
+5. In Storybook Design System, the color and typography DocsPage is written in MDX.
+6. Basically, they are designed as Documentation-only nodes in the Storybook. DocsPage for Documentation-only nodes can be designed only with 	 the help of MDX.
+
+
+
+
+
+
+

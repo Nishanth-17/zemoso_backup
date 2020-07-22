@@ -1,0 +1,7 @@
+1. HTML and CSS are markup languages. Markup languages are used to describe and define elements within a document. JavaScript is a programming language. Programming languages are used to communicate instructions to a machine. Programming languages can be used to control the behavior of a machine and to express algorithms.
+
+2. Every value in JavaScript has an inherent boolean value. When that value is evaluated in the context of a boolean expression, the value will be transformed into that inherent boolean value.
+
+3. All function declarations are hoisted and loaded before the script is actually run. Function expressions are not hoisted, since they involve variable assignment, and only variable declarations are hoisted. The function expression will not be loaded until the interpreter reaches it in the script.
+
+4. push() adds element at the end and pop() returns the element that has been removed from the end, in case you need to use it.

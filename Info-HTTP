@@ -1,0 +1,3 @@
+HTTP is a stateless protocol, which means it does not store the requests info. A website normally uses HTTP cookies to store the client information and these cookies are stored on the client side, which are given by web server.
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status

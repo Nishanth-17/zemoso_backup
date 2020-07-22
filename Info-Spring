@@ -1,0 +1,39 @@
+1. This is about Bean Scopes-Singleton and Prototype.
+By default,Spring framework uses the Singleton design pattern. When we run the application and even if we do not call the getBean() method, the object is created. And no matter how many times u want to create an object(call getBean()), the object is created only once. 
+In Prototype pattern, every time we call getBean(), an object is created. And it does not create an object by default, an object is created only if u call getBean() method.
+
+2. The Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that dispatches requests to handlers, with configurable handler mappings, view resolution, locale and theme resolution as well as support for uploading files. The default handler is based on the @Controller and @RequestMapping annotations, offering a wide range of flexible handling methods. With the introduction of Spring 3.0, the @Controller mechanism also allows you to create RESTful Web sites and applications.
+
+3. The model (the M in MVC) is a Map interface, which allows for the complete abstraction of the view technology. You can integrate directly with template based rendering technologies such as JSP, Velocity and Freemarker, or directly generate XML, JSON, Atom, and many other types of content. A Controller is typically responsible for preparing a model Map with data and selecting a view name but it can also write directly to the response stream and complete the request.  
+
+https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/mvc.html
+
+4. Servlet is a Server Component which is responsible to generate dynamic content. Whenever we want to create a dynamic web page, we use servlets. Tomcat is a Servlet Engine or Web Container, which is responsible to map request to web.xml and to Servlet Class. 
+Servlet has a method Service() which has two arguments, client request and server response. 
+
+5. Loose coupling is achieved in spring using the technique Inversion of Control. The objects give their dependencies instead of creating or looking for dependent objects.	
+
+6.DEPENDENCY INJECTION - You do not create your objects but describe how it should be created. You don't directly associate your components and services together in code but describe the mapping and association between the services and components in a configuration file. A container (the IOC container) then holds the responsibility for hooking it all up based on the definition.
+
+7. Reflection is an API which is used to examine or modify the behavior of methods, classes, interfaces at runtime.
+Reflection gives us information about the class to which an object belongs and also the methods of that class which can be executed by using the object. Through reflection we can invoke methods at runtime irrespective of the access specifier used with them.
+
+8. Java only provides a default no-argument constructor if no other constructors are defined. Thus, if you have other constructors you must explicitly define a no-arg constructor yourself.
+These frameworks(Spring, Hibernate) use the reflection API and look at method names to determine how to set properties. The arguments of a constructor can only be found by type, not by name, so there is no way for the framework to reliably match properties to constructor args. Therefore, they require a no-arg constructor to create the object, then can use the setter methods to initialise the data.
+
+9. Hibernate, and code in general that creates objects via reflection use Class<T>.newInstance() to create a new instance of your classes. This method requires a public no-arg constructor to be able to instantiate the object.
+
+10. All persistent classes must have a default constructor (which can be non-public) so that Hibernate can instantiate them using Constructor.newInstance(). Java classes whose objects or instances will be stored in database tables, are called PERSISTENT classes in Hibernate.
+
+11. When Hibernate creates instance of entities using reflection it uses Class.newInstance() method, which require a no argument constructor to create an instance. It's effectively equivalent of new Entity(). This method throws InstantiationException if it doesn't found any no argument constructor in Entity class, and that's why it's advised to provide a no argument constructor.
+By the way it's not just Hibernate, who make use of Reflection to create instance of class. If you are familiar with Spring and Dependency Injection, that you might know that Spring also creates instance of class using reflection
+
+12. https://javarevisited.blogspot.com/2014/01/why-default-or-no-argument-constructor-java-class.html
+
+13. Hibernate CRUD: The operations that we directly perform on the database object(retrieved from session) do not require saving the session.
+    Operations RUD do not requires session save.
+
+14. Field injection should be mostly avoided. As a replacement, you should use either constructors or methods to inject your dependencies. Both have its advantages and disadvantages and the usage depends on the situation. However, as those approaches can be mixed, it is not an either-or choice and you can combine both setter and constructor injection	 in one class. Constructors are more suitable for mandatory dependencies and when aiming for immutability. Setters are better for optional dependencies.
+
+		https://www.vojtechruzicka.com/field-dependency-injection-considered-harmful/
+		https://blog.marcnuri.com/field-injection-is-not-recommended/
